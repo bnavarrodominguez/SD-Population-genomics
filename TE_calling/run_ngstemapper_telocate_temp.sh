@@ -4,16 +4,16 @@
 
 #!/bin/bash -l
 
-run_dir=/scratch/bnavarr2/analysis/sd_te/mcclintock_running
-bin_dir=/scratch/bnavarr2/scripts/mcclintock
-reference=dmel.chromosomes.fa
-te_fasta=specieslib_mcClintock.fa
-gff_file=dmel.chromosomes.fa.TE.mcClintock.gff
-tsv_file=dmel.chromosomes.fa.TE.mcClintock.tsv
+run_dir=/home/user/mcclintock_running
+bin_dir=/bin/mcclintock/
+reference=reference.fa
+te_fasta=te.mcclintock.fa
+gff_file=te.mcclintock.gff
+tsv_file=te.mcclintock.tsv
 reads_1=$1
 reads_2=$2
-threads=8
 out_dir=$run_dir/$(basename $reads_1 _1.fastq)_ngs_temp_telocate
+threads=8
 
 # Run the pipeline 
 cd $run_dir
