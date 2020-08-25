@@ -2,7 +2,7 @@
 
 ## Dependencies
 - McClintock & its dependencies: https://github.com/bergmanlab/mcclintock
-- TE\_insertion\_merger.py from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics/blob/master/empirics/TE_insertion_merger.py
+- TE\_insertion\_merger.py from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics/blob/master/empirics/TE_insertion_merger.py (last accessed Jan 31 2019)
 
 ## Use
 
@@ -31,12 +31,12 @@ Assumes that the name column in the bed files is formatted like this:
 ```
 #All beds in a folder named "beds_to_merge" - bed from McClinctock output folders
 cat beds_to_merge/*.bed > merged.bed
-#Convert to tab format for TE_insertion_merger.py (asumes that libraries are labelled as pop_genotype_Lib)
+#Convert to tab format for TE_insertion_merger.py
 sh get_tab_from_bed.sh merged.bed
 ```
 
 ### 4. Merge overlapping evidence within N bp
-Script from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics
+Script from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics (last accessed Jan 31 2019)
 
 ```
 TE_insertion_merger.py merged.tab 500
