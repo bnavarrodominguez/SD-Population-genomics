@@ -39,7 +39,7 @@ sh get_tab_from_bed.sh merged.bed
 Script from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics
 
 ```
-TE_insertion_merger.py merged.bed 500
+TE_insertion_merger.py merged.tab 500
 ```
 
 ### 5. Filter calls that have been predicted only by one of the TE callers
