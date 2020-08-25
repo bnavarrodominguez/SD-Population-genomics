@@ -1,4 +1,7 @@
-#!/bin/bash -l
+#!/bin/bash 
+#####Beatriz Navarro Dominguez
+#####Run PopoolationTE through McClintock
+
 
 run_dir=/scratch/bnavarr2/analysis/sd_te/mcclintock_running
 bin_dir=/scratch/bnavarr2/scripts/mcclintock

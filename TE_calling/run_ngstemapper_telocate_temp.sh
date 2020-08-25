@@ -1,3 +1,7 @@
+#!/bin/bash 
+#####Beatriz Navarro Dominguez
+#####Run ngs_te_mapper, TEMP and TE-locate through McClintock
+
 #!/bin/bash -l
 
 run_dir=/scratch/bnavarr2/analysis/sd_te/mcclintock_running

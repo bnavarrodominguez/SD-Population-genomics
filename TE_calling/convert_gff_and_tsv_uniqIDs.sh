@@ -1,3 +1,7 @@
+#!/bin/bash 
+#####Beatriz Navarro Dominguez
+#####Generate TSV file for McClintock from RepeatMasker GFF
+
 # Change the name column so it's the same than in the example data of McClintock
 sed "s/Target=/ID=/g" dmel.chromosomes.fa.onlyTEs.gff > tmp
 
