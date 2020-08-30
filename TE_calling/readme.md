@@ -2,7 +2,7 @@
 
 ## Dependencies
 - McClintock & its dependencies: https://github.com/bergmanlab/mcclintock
-- TE\_insertion\_merger.py from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics/blob/master/empirics/TE_insertion_merger.py (last accessed Jan 31 2019)
+- TE\_insertion\_merger.py: from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics (last accessed Jan 31 2019)
 
 ## Use
 
@@ -19,6 +19,8 @@ sh convert_gff_and_tsv_uniqIDs.sh te.gff te.fa
 ```
 
 ### 2. Run McClintock
+Edit the scripts to define run directory, directory  where McClontock is installed, reference.fa, te.gff, te.tsv. 
+
 ```
 sh run_retroseq.sh reads_1.fastq reads_2.fastq &> retroseq.log
 sh run_popoolation.sh reads_1.fastq reads_2.fastq &> popoolation.log
@@ -43,3 +45,5 @@ TE_insertion_merger.py merged.tab 500
 ```
 
 ### 5. Filter calls that have been predicted only by one of the TE callers
+
+

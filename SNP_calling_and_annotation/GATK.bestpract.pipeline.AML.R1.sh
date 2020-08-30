@@ -49,7 +49,8 @@ function BWA {
 
 INFILE=$1
 #REFERENCE="/home/alarracu/dmel-all-chromosome-r6.03.numerical.fasta"
-REFERENCE="/home/alarracu/Drosophila_melanogaster.BDGP6.v88.dna.toplevel.NUM.fa"
+#REFERENCE="/home/alarracu/Drosophila_melanogaster.BDGP6.v88.dna.toplevel.NUM.fa"
+REFERENCE=$2
 
 echo "input $INFILE"
 PREFIX=${INFILE//.list.txt/}
