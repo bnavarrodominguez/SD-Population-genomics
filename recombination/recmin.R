@@ -1,3 +1,6 @@
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
 require(dplyr)
 require(stringr)
 require(tidyverse)
@@ -6,7 +9,9 @@ require(ggplot2)
 #setwd("~/Documentos/investigacion/ur_larracuente_presgraves/SD_SNPs/recmin/")
 
 ####Read data
-snps <- read.delim("maf2_338_variants.simple.vcf")
+
+
+snps <- read.delim(args[1])
 str(snps)
 
 #in2rmal = c(8855602, 18774475)

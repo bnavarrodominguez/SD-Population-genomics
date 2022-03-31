@@ -1,11 +1,11 @@
 sample=$1
 reference=$2
-prefix="ZI_dpgp3"
+prefix=$3
 dir="/scratch/bnavarr2/analysis/sd_in2Rmal_dpgp3/mapping_dpgp3_to_chr2R/bams"
 
 
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 sample_name reference"
+    echo "Usage: $0 sample_name reference out_prefix"
 	exit 1
 fi
 

@@ -1,3 +1,6 @@
+#!/usr/bin/env Rscript
+args = commandArgs(trailingOnly=TRUE)
+
 #############Load libraries
 require(dplyr)
 require(stringr)
@@ -10,8 +13,8 @@ require(cowplot)
 
 
 
-priv_sites <- read.delim("private_sites.txt", header=FALSE)
-shar_sites <- read.delim("shared_sites.txt", header=FALSE)
+priv_sites <- read.delim(args[1], header=FALSE)
+shar_sites <- read.delim(args[2], header=FALSE)
 
 
 priv_sites %>% group_by(V1) %>% dplyr::summarise(tot= n())
