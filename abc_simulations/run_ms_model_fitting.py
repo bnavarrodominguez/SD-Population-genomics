@@ -15,7 +15,7 @@ import csv
 import numpy as np
 from scipy import stats
 
-print("\nUsage run_ms.gof.py Nsims OutPrefix ObsS EstTsweep")
+print("\nUsage run_ms.gof.py Nsims OutPrefix ObsS tsweep alpha")
 
 ##### Variable input
 try:
