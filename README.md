@@ -153,7 +153,6 @@ $ get_tab_from_bed.sh all_te_calls.bed
 
 $ TE_insertion_merger.py all_te_calls.tab3  d
 ```
-TE_insertion_merger.py from https://github.com/KamilSJaron/reproductive_mode_TE_dynamics/blob/master/empirics/TE_insertion_merger.py
 
 # Detect inversions from Illumina data
 
