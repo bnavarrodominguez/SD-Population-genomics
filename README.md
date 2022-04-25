@@ -141,7 +141,9 @@ $ run_retroseq.sh
 ```
 ## Merge close TE insertions
 
-Concatenate bed files from McClinctock and merge overlapping evidence within a distance smaller than d bp
+Depends: [TE_insertion_merger.py](https://github.com/KamilSJaron/reproductive_mode_TE_dynamics/blob/master/empirics/TE_insertion_merger.py) from KamilSJaron
+
+Concatenate bed files from McClinctock and merge overlapping evidence within a distance smaller than *d* bp
 
 ```
 $ cat *.bed > all_te_calls.bed
@@ -155,7 +157,7 @@ TE_insertion_merger.py from https://github.com/KamilSJaron/reproductive_mode_TE_
 
 # Detect inversions from Illumina data
 
-Read mapping
+Read mapping (repeats in the reference must be masked)
 
 ```
 $ run_bwa_mem.sh sample_name reference out_prefix
@@ -168,6 +170,7 @@ $ detect_inversions.sh bamfile
 $ detect_Sd.sh bamfile
 $ Rscript SD_screening.R
 ```
+
 
 # Recombination
 
