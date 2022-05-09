@@ -192,7 +192,10 @@ while i < nsims:
         rejtd = rejtd+1
         rejF.write("%f %f %f %f %f %f %f 'rej_Pi' \n" % (t,mean_pi,se_pi,mean_s,se_s,mean_tajd,se_tajd))
 	rejF.flush()
-	
+    if(rejboth+rejpi+rejtd>=1000*nsims and i==0):
+        print("Too many rejections - model does not fit")
+        break
+
 
 
 accF.close()
