@@ -47,35 +47,21 @@ nsims = int(nsims)
 
 ####Define fixed parameters
 
-#### D. melanogaster Ne in Zambia (Kapopoulou 2018)
-#ne = 3160475
-#print("D. melanogaster Ne in Zambia (Kapopoulou 2018): ", ne)
-#
-
-### D. mauritiana Ne (estimated from Pi and mut rate)
-ne = 2230769 ## based on laurent et al. 2011
-#ne = 1035714 ## based on Keightley et al. 2014
-
-print("D. mauritiana Ne (estimated from Pi and mut rate): ", ne)
+### D. melanogaster Ne in Zambia (Kapopoulou 2018)
+ne = 3160475
+print("D. melanogaster Ne in Zambia (Kapopoulou 2018): ", ne)
 
 #####Mutation rate per site per generation (Laurent et al 2011, used in Kapopoulou 2018)
 mutrate = 1.3e-9
 print("Mutation rate per site per generation (Laurent et al 2011): ", mutrate)
 
-
-#### Frequency of In(2R)Mal - 1.47%
-#freq = 0.0147
-#print("Frequency of In(2R)Mal: ", freq)
-
-
-#### Frequency of Nmy
-freq = 1
-print("Frequency of Nmy: ", freq)
-
+### Frequency of In(2R)Mal - 1.47%
+freq = 0.0147
+print("Frequency of In(2R)Mal: ", freq)
 
 ##### Sequence lenght
-seql = 3564
-print("Lenght of Nmy: ", seql)
+seql = 9500000
+print("Lenght of In(2R)Mal: ", seql)
 
 
 ##### Theta
@@ -207,9 +193,7 @@ while i < nsims:
         rejF.write("%f %f %f %f %f %f %f 'rej_Pi' \n" % (t,mean_pi,se_pi,mean_s,se_s,mean_tajd,se_tajd))
 	rejF.flush()
 	
-    if(rejboth+rejpi+rejtd>=100*nsims and i==0):
-        print("Too many rejections - model does not fit")
-        break
+
 
 accF.close()
 rejF.close()
