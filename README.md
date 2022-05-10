@@ -1,3 +1,7 @@
+This repository contains scripts for the following publication:
+Navarro-Domínguez, B., Chang, C-H, Brand, C, Muirhead, C., Presgraves, D.C., and A.M. Larracuente. 2021 Epistatic selection on a selfish Segregation Distorter supergene: drive, recombination, and genetic load. BioRxiv 12/23/21 https://doi.org/10.1101/2021.12.22.473781. eLife 2022;11:e78981 DOI: 10.7554/eLife.78981
+
+
 # SNP calling and annotation
 
 ## GATK
