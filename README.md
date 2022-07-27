@@ -56,9 +56,9 @@ $ intersect_snps.sh file1.vcf.gz file2.vcf.gz file3.vcf.gz
 Simplify VCF (for each sample)
 
 ```
-$ SimplifyVCF_Basic.readFiltfromVCF.pl population_1.simple.vcf
-$ SimplifyVCF_Basic.readFiltfromVCF.pl population_2.simple.vcf
-$ SimplifyVCF_Basic.readFiltfromVCF.pl population_3.simple.vcf
+$ SimplifyVCF_Basic.readFiltfromVCF.pl population_1.vcf
+$ SimplifyVCF_Basic.readFiltfromVCF.pl population_2.vcf
+$ SimplifyVCF_Basic.readFiltfromVCF.pl population_3.vcf
 ```
 
 Run population genomics analyses
